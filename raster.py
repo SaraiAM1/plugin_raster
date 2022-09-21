@@ -17,3 +17,7 @@ class interfaz (QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+        self.ui.btn4.clicked.connect(self.cerrar)
+
+    def cerrar(self):
+        self.close()
